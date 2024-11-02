@@ -1,14 +1,12 @@
 function displayRandomLyric() {
-    fetch('lyrics.txt')
-        .then(response => response.text())
+    fetch('lyrics.json')
+        .then(response => response.json())
         .then(data => {
-            const lyricsArray = data.split('\n').filter(line => line.trim() !== '');
+            const randomIndex = Math.floor(Math.random() * data.length);
+            const { lyric, title } = data[randomIndex];
             
-            const randomIndex = Math.floor(Math.random() * lyricsArray.length);
-            const [lyricText, songTitle] = lyricsArray[randomIndex].split('#');
-            
-            document.getElementById("lyrics").innerText = `"${lyricText.trim()}"`;
-            document.getElementById("title").innerText = songTitle ? `— ${songTitle.trim()}` : "";
+            document.getElementById("lyrics").innerText = `"${lyric}"`;
+            document.getElementById("title").innerText = title ? `— ${title}` : "";
         })
         .catch(error => {
             console.error("无法加载歌词文件：", error);

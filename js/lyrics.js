@@ -1,12 +1,12 @@
-function displayRandomLyric() {
+function displayRandomLyrics() {
     fetch('lyrics.json')
         .then(response => response.json())
         .then(data => {
             const randomIndex = Math.floor(Math.random() * data.length);
-            const { lyric, title } = data[randomIndex];
+            const { lyrics, title } = data[randomIndex];
             
-            document.getElementById("lyrics").innerText = `"${lyric}"`;
-            document.getElementById("title").innerText = title ? `— ${title}` : "";
+            document.getElementById("lyrics").innerText = `"${lyrics}"`;
+            document.getElementById("title").innerText = title ? `${title}` : "";
         })
         .catch(error => {
             console.error("无法加载歌词文件：", error);
@@ -15,4 +15,4 @@ function displayRandomLyric() {
         });
 }
 
-window.onload = displayRandomLyric;
+window.onload = displayRandomLyrics;

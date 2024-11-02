@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>WEBSITE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>THE DARK SIDE OF THE MOON</h1>
-    <p>I see you on the dark side of the moon.</p>
+
+<header>
+    <h1>This is a personal website</h1>
+</header>
+
+<nav>
+    <a href="#home">主页</a>
+    <a href="#about">关于我</a>
+    <a href="#ND1">NOT DETERMINED</a>
+    <a href="#contact">联系我</a>
+</nav>
+
+<section id="home" class="hero">
+    <h2>THE DARK SIDE OF THE MOON</h2>
+    <p>I'll see you on the dark side of the moon</p>
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>不知道这里写什么</p>
+</section>
+
+<section id="ND1">
+    <h2>IDK</h2>
+    <p>I have no idea what to write here</p>
+</section>
+
+<section id="contact">
+    <h2>CONTACT</h2>
+    <p>You can contact me at</p>
+    <ul>
+        <li>Email:</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Craden Stormwalker - 个人网站</p>
+</footer>
+
 </body>
 </html>

@@ -1,20 +1,20 @@
-function displayRandomQuote() {
-    fetch('quotes.txt')
+function displayRandomLyric() {
+    fetch('lyrics.txt')
         .then(response => response.text())
         .then(data => {
-            const quotes = data.split('\n').filter(line => line.trim() !== '');
+            const lyricsArray = data.split('\n').filter(line => line.trim() !== '');
             
-            const randomIndex = Math.floor(Math.random() * quotes.length);
-            const [quoteText, author] = quotes[randomIndex].split('#');
+            const randomIndex = Math.floor(Math.random() * lyricsArray.length);
+            const [lyricText, songTitle] = lyricsArray[randomIndex].split('#');
             
-            document.getElementById("quote").innerText = `"${quoteText.trim()}"`;
-            document.getElementById("author").innerText = author ? `— ${author.trim()}` : "";
+            document.getElementById("lyrics").innerText = `"${lyricText.trim()}"`;
+            document.getElementById("title").innerText = songTitle ? `— ${songTitle.trim()}` : "";
         })
         .catch(error => {
-            console.error("无法加载语录文件：", error);
-            document.getElementById("quote").innerText = "无法加载语录";
-            document.getElementById("author").innerText = "";
+            console.error("无法加载歌词文件：", error);
+            document.getElementById("lyrics").innerText = "无法加载歌词";
+            document.getElementById("title").innerText = "";
         });
 }
 
-window.onload = displayRandomQuote;
+window.onload = displayRandomLyric;

@@ -1,7 +1,7 @@
 #anime {
     user-select: none;
     position: fixed;
-    left: 30px;
+    left: 10px;
     bottom: 0;
     width: 280px;
     height: 250px;
@@ -41,10 +41,9 @@
 }
 
 .hide-button {
-    position: absolute;
-    top: 10px;
+    position: fixed;
     right: 0;
-    /* bottom: 30px; */
+    bottom: 300px;
     display: none;
     overflow: hidden;
     /* padding: 4px; */

@@ -138,8 +138,9 @@ footer {
 }
 .blog {
     background-color: #ffffffAA;
+    width: 90%;
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px auto 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
 }

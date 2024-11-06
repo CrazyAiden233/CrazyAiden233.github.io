@@ -100,7 +100,7 @@ footer {
     margin-top: 20px;
 }
 #side-content .card-widget {
-    position: absolute;
+    position: fixed;
     padding: 0 15px 15px;
     margin: 0 auto;
     background-color: #fff;

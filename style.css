@@ -65,3 +65,41 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+#side-content .card-widget {
+    position: absolute;
+    padding: 0 15px 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+#side-content .webinfo{
+    bottom: 20px;
+    right: 20px;
+    height: 200px;
+    width: 250px;
+}
+/* 悬停效果：放大和增加阴影 */
+#side-content .card-widget:hover {
+    transform: scale(1.01); /* 放大 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 增加阴影 */
+}
+#side-content .card-widget .counter {
+    bottom: 10px;
+    right: 50px;
+    position: absolute;
+}
+#side-content .card-widget .counter-text {
+    bottom: 70px;
+    position: absolute;
+    color: #333;
+    font-size: 15px;
+}
+#side-content .card-widget .time-text {
+    bottom: 120px;
+    position: absolute;
+    color: #333;
+    font-size: 15px;
+}

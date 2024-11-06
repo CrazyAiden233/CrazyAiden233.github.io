@@ -21,33 +21,67 @@ body:after {
     opacity: 0.2;
     z-index: -1;
 }
-header {
+nav {
     background-color: #00ffddAA;
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: end;
     text-align: center;
-}
-header a {
-    color: #666;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #b3ffebAA;
 }
 nav a {
     color: #666;
+    right: 10px;
     padding: 15px 20px;
     text-decoration: none;
     text-align: center;
 }
 nav a:hover {
     background-color: #ddfff6;
+}
+/* 侧边栏样式 */
+.sidebar {
+    height: 50%; /* 使侧边栏高度充满整个页面 */
+    width: 180px; /* 侧边栏的宽度 */
+    position: fixed; /* 固定在页面左侧 */
+    display: flex;
+    top: 100px;
+    left: 0;
+    background-color: #00ffddAA; /* 侧边栏的背景颜色 */
+    color: white; /* 文字颜色 */
+    padding-top: 20px; /* 上边距 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 侧边栏标题样式 */
+.sidebar h2 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* 侧边栏菜单项 */
+.sidebar ul {
+    list-style-type: none; /* 移除默认的列表样式 */
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px; /* 每一项的内边距 */
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none; /* 移除链接下划线 */
+    display: block; /* 使链接占满整个li */
+    font-size: 18px;
+}
+
+/* 侧边栏菜单项 hover 样式 */
+.sidebar ul li a:hover {
+    background-color: #575757; /* 鼠标悬停时的背景色 */
 }
 section {
     padding: 20px;
@@ -73,7 +107,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
 }
 #side-content .webinfo{
     bottom: 20px;
@@ -102,4 +135,33 @@ footer {
     position: absolute;
     color: #333;
     font-size: 15px;
+}
+.blog {
+    background-color: #ffffffAA;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.blog h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.post-body p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.post-body h3 {
+    font-size: 24px;
+    margin-top: 20px;
 }

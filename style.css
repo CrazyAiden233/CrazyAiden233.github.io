@@ -26,7 +26,13 @@ header {
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    text-align: center;
+}
+header a {
+    color: #666;
+    padding: 15px 20px;
+    text-decoration: none;
     text-align: center;
 }
 nav {

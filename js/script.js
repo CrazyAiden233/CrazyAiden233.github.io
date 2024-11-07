@@ -58,7 +58,7 @@ setInterval(setTime, 1000);
 var gitalk = new Gitalk({
     clientID: 'Ov23liXTkkFAIxUqpowa',
     clientSecret: '77d71890245d3827fff9aaf4aebba0fbce948992',
-    repo: 'website_comment',
+    repo: 'CrazyAiden233.github.io',
     owner: 'CrazyAiden233',
     admin: ['CrazyAiden233'],
     id: location.pathname,      // Ensure uniqueness and length less than 50

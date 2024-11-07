@@ -100,6 +100,10 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+#side-content {
+    position: absolute;
+    right: 0;
+}
 #side-content .card-widget {
     position: fixed;
     padding: 0 15px 15px;
@@ -111,7 +115,7 @@ footer {
 }
 #side-content .webinfo{
     bottom: 20px;
-    right: 20px;
+    right: 15px;
     height: 200px;
     width: 250px;
 }
@@ -138,14 +142,13 @@ footer {
     font-size: 15px;
 }
 .blog {
-    background-color: #ffffffAA;
-    width: 90%;
+    background-color: #ffffffCC;
+    width: 70%;
     padding: 20px;
-    margin: 20px auto 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    margin: 20px 60px 0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
-
 .blog h2 {
     font-size: 32px;
     color: #333;

@@ -125,13 +125,17 @@ function hideMessage(timeout){
 }
 
 function initLive2d (){
-    $('.hide-button').fadeOut(0).on('click', () => {
-        $('#anime').css('display', 'none')
-    })
-    $('#anime').hover(() => {
-        $('.hide-button').fadeIn(600)
-    }, () => {
-        $('.hide-button').fadeOut(600)
-    })
+    const button = document.getElementById("hide-button");
+    const live2d = document.getElementById("live2d");
+    const message = document.getElementById("message");
+    if(live2d.style.display === "none") {
+        live2d.style.display = "block";
+        message.style.display = "block";
+        button.text = "隐藏"
+    } else {
+        live2d.style.display = "none";
+        message.style.display = "none"
+        button.text = "显示";
+    }
 }
 initLive2d ();

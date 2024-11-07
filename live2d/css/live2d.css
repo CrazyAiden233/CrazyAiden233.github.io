@@ -42,24 +42,22 @@
 
 .hide-button {
     position: fixed;
-    right: 0;
-    bottom: 300px;
-    display: none;
-    overflow: hidden;
+    left: 5px;
+    bottom: 0;
     /* padding: 4px; */
-    width: 60px;
+    width: 45px;
     height: 20px;
-    border: 1px solid rgba(255,137,255,.4);
+    border: 1px solid rgb(161, 161, 161);
     border-radius: 12px;
-    background: rgba(255,137,255,.2);
-    box-shadow: 0 3px 15px 2px rgba(255,137,255,.4);
+    background: rgba(161, 161, 161, 0.18);
+    box-shadow: 0 3px 15px 2px rgba(161, 161, 161, 0.37);
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     cursor: pointer;
 }
 
 .hide-button:hover {
-    border: 1px solid #f4a7b9;
+    border: 1px solid #818181;
     background: #f4f6f8;
 }
 

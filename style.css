@@ -167,3 +167,8 @@ footer {
     font-size: 24px;
     margin-top: 20px;
 }
+#gitalk-container {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}

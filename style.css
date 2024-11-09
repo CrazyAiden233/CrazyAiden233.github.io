@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    position: relative;
 }
 body:after {
     background-image: url('picture/bg.PNG');
@@ -20,6 +19,9 @@ body:after {
     left: 0;
     opacity: 1;
     z-index: -1;
+}
+pointer-particles {
+    position: fixed;
 }
 nav {
     background-color: #00ffddAA;
@@ -174,4 +176,9 @@ footer {
     position: relative;
     width: 60%;
     margin: 0 auto;
+}
+#pointer-particles {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }

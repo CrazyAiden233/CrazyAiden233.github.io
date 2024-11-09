@@ -1,3 +1,4 @@
+//歌词
 function displayRandomLyrics() {
     fetch('lyrics.json')
         .then(response => response.json())
@@ -15,6 +16,7 @@ function displayRandomLyrics() {
         });
 }
 window.onload = displayRandomLyrics;
+//网站建立时间
 function secondToDate(second) {
     if (!second) {
         return 0;
@@ -64,5 +66,4 @@ var gitalk = new Gitalk({
     id: location.pathname,      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
 })
-
-gitalk.render('gitalk-container')
+gitalk.render('gitalk-container');

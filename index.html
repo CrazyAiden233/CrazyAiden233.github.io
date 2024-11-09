@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 </head>
 <body>
+    <pointer-particles></pointer-particles>
     <nav>
         <a href="/">HOME</a>
         <a href="/blog">BLOG</a>
@@ -23,39 +24,39 @@
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </div>
-<div class="blog">
-    <section id="welcome" class="hero">
-        <h2 id="title"></h2>
-        <p id="lyrics"></p>
-    </section>
+    <div class="blog">
+        <section id="welcome" class="hero">
+            <h2 id="title"></h2>
+            <p id="lyrics"></p>
+        </section>
 
-    <section id="about">
-        <h2>About</h2>
-        <ul>
-            <li>USTCer</li>
-            <li>Rock&#39;n&#39;Roll music</li>
-            <li>Games</li>
-            <li>Dungeons &amp; Dragons</li>
-            <li>ACGN</li>
-        </ul>
-    </section>
+        <section id="about">
+            <h2>About</h2>
+            <ul>
+                <li>USTCer</li>
+                <li>Rock&#39;n&#39;Roll music</li>
+                <li>Games</li>
+                <li>Dungeons &amp; Dragons</li>
+                <li>ACGN</li>
+            </ul>
+        </section>
 
-    <section id="ND1">
-        <h2>IDK</h2>
-        <p>I have no idea what to write here</p>
-    </section>
+        <section id="ND1">
+            <h2>IDK</h2>
+            <p>I have no idea what to write here</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can contact me at</p>
-        <ul>
-            <li>Email: craden@mail.edu.ustc.cn; 2393152780@QQ.com; cradenstormwalker@gmail.com</li>
-            <li>QQ: 2393152780</li>
-            <li>WeChat: Aidenisking</li>
-        </ul>
-    </section>
-    <div id="gitalk-container"></div>
-</div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can contact me at</p>
+            <ul>
+                <li>Email: craden@mail.edu.ustc.cn; 2393152780@QQ.com; cradenstormwalker@gmail.com</li>
+                <li>QQ: 2393152780</li>
+                <li>WeChat: Aidenisking</li>
+            </ul>
+        </section>
+        <div id="gitalk-container"></div>
+    </div>
     <div id="side-content">
         <div class="card-widget webinfo">
             <h4>关于本站</h4>
@@ -68,7 +69,7 @@
     </div>
 
     <div id="anime">
-        <div class="message" style="opacity:0"></div>
+        <div class="message"></div>
         <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
         <button id="hide-button" class="hide-button" onclick="initLive2d()">隐藏</button>
     </div>
@@ -88,5 +89,6 @@
     </script>
     <script src="live2d/js/message.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/pointer.js"></script>
 </body>
 </html>

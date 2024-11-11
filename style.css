@@ -1,3 +1,12 @@
+/*nav {
+    position: relative;
+    background: #DDD;
+
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    top: 0;
+}*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,7 +33,7 @@ pointer-particles {
     position: fixed;
 }
 nav {
-    background-color: #00ffddAA;
+    background-color: rgba(0, 0, 0, 0.20);
     color: #fff;
     display: flex;
     align-items: center;
@@ -32,15 +41,46 @@ nav {
     text-align: center;
     top: 0;
 }
-nav a {
-    color: #666;
-    right: 10px;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-align: center;
+.menuItems {
+    list-style: none;
+    display: flex;
 }
-nav a:hover {
-    background-color: #ddfff6;
+
+.menuItems li {
+}
+.menuItems li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.menuItems li a::before {
+    content: attr(data-item);
+    text-decoration: underline;
+    border-bottom: 4px;
+    transition: 0.5s;
+    color: #00ffdd;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+}
+.menuItems li a:hover::before {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+nav #name {
+    left: 50px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    cursor: default;
 }
 /* 侧边栏样式 */
 .sidebar {

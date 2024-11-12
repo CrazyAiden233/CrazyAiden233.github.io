@@ -45,8 +45,8 @@ nav {
     list-style: none;
     display: flex;
 }
-
-.menuItems li {
+.menuItems li i {
+    text-align: center;
 }
 .menuItems li a {
     text-decoration: none;

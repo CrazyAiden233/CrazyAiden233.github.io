@@ -1,9 +1,9 @@
 :root {
-    --background: #00ffdd;
+    --background: #fff;
     --sidebar-width: 256px;
     --sidebar-width-min: 80px;
-    --sidebar-dark-primary: #a1a1a1;
-    --sidebar-dark-secondary: #2c3e50;
+    --sidebar-dark-primary: #7ebecb;
+    --sidebar-dark-secondary: #666;
     --sidebar-light-primary: #f5f6fa;
     --sidebar-light-secondary: #f5f6fa;
 }
@@ -47,13 +47,17 @@ nav {
 }
 .menuItems li i {
     text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+.menuItems li:hover .fa {
+    color: #00ffdd;
 }
 .menuItems li a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     font-weight: 400;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
     text-transform: uppercase;
     margin: 20px;
@@ -62,7 +66,7 @@ nav {
     content: attr(data-item);
     text-decoration: underline;
     border-bottom: 4px;
-    transition: 0.5s;
+    transition: 0.3s;
     color: #00ffdd;
     position: absolute;
     top: 0;
@@ -74,7 +78,7 @@ nav {
 }
 .menuItems li a:hover::before {
     width: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 nav #name {
     left: 50px;
@@ -409,8 +413,11 @@ label[for="sidebar-toggle"] {
 }
 
 .sidebar-button:nth-of-type(1):hover ~ #sidebar-content-highlight { top: calc((1 - 1) * 54px + 16px); }
+.sidebar-button:nth-of-type(1):hover { color: var(--sidebar-dark-secondary);}
 .sidebar-button:nth-of-type(2):hover ~ #sidebar-content-highlight { top: calc((2 - 1) * 54px + 16px); }
+.sidebar-button:nth-of-type(2):hover { color: var(--sidebar-dark-secondary);}
 .sidebar-button:nth-of-type(3):hover ~ #sidebar-content-highlight { top: calc((3 - 1) * 54px + 16px); }
+.sidebar-button:nth-of-type(3):hover { color: var(--sidebar-dark-secondary);}
 
 /* Repeat this pattern for other .sidebar-button:nth-of-type(N):hover selectors */
 

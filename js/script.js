@@ -4,8 +4,8 @@ function displayRandomLyrics() {
         .then(response => response.json())
         .then(data => {
             const randomIndex = Math.floor(Math.random() * data.length);
-            const { lyrics, title } = data[randomIndex];
-            
+            const {lyrics, title} = data[randomIndex];
+
             document.getElementById("lyrics").innerText = `"${lyrics}"`;
             document.getElementById("title").innerText = title ? `${title}` : "";
         })
@@ -15,7 +15,9 @@ function displayRandomLyrics() {
             document.getElementById("title").innerText = "";
         });
 }
+
 window.onload = displayRandomLyrics;
+
 //网站建立时间
 function secondToDate(second) {
     if (!second) {
@@ -43,17 +45,19 @@ function secondToDate(second) {
     }
     return time;
 }
+
 function setTime() {
     //mouth要少一个月不然会出问题
     var create_time = Math.round(new Date(Date.UTC(2024, 10, 7, 0, 0, 0)).getTime() / 1000);
     var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-    var currentTime = secondToDate((  timestamp-create_time));
+    var currentTime = secondToDate((timestamp - create_time));
     var currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
         + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
         + '秒';
-    if(document.getElementById("htmer_time")!=null)
-        document.getElementById("htmer_time").innerHTML = "本站已存活"+currentTimeHtml;
+    if (document.getElementById("htmer_time") != null)
+        document.getElementById("htmer_time").innerHTML = "本站已存活" + currentTimeHtml;
 }
+
 //即时刷新
 setInterval(setTime, 1000);
 
@@ -67,3 +71,8 @@ var gitalk = new Gitalk({
     distractionFreeMode: false  // Facebook-like distraction free mode
 })
 gitalk.render('gitalk-container');
+
+let loader = document.querySelector(".loader");
+window.onload = function () {
+    loader.style.display = "none";
+}

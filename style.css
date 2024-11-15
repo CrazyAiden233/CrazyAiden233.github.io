@@ -2,7 +2,7 @@
     --background: #00ffdd;
     --sidebar-width: 256px;
     --sidebar-width-min: 80px;
-    --sidebar-dark-primary: #18283b;
+    --sidebar-dark-primary: #a1a1a1;
     --sidebar-dark-secondary: #2c3e50;
     --sidebar-light-primary: #f5f6fa;
     --sidebar-light-secondary: #f5f6fa;
@@ -257,7 +257,7 @@ footer {
 #sidebar-bar {
     position: fixed;
     left: 10px;
-    top: 60px;
+    top: 75px;
     height: calc(100% - 20vw);
     background: var(--sidebar-dark-primary);
     border-radius: 16px;

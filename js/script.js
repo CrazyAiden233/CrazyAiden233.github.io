@@ -16,8 +16,6 @@ function displayRandomLyrics() {
         });
 }
 
-window.onload = displayRandomLyrics;
-
 //网站建立时间
 function secondToDate(second) {
     if (!second) {
@@ -75,4 +73,5 @@ gitalk.render('gitalk-container');
 let loader = document.querySelector(".loader");
 window.onload = function () {
     loader.style.display = "none";
+    displayRandomLyrics();
 }

@@ -49,13 +49,9 @@ nav {
     text-align: center;
     transition: color 0.3s ease-in-out;
 }
-.menuItems li:hover{
+.menuItems li:hover a, .menuItems li:hover{
     color: #00ffdd;
 }
-.menuItems li:hover a{
-    color: #00ffdd;
-}
-
 .menuItems li a {
     text-decoration: none;
     color: #fff;

@@ -123,6 +123,16 @@ footer {
 #side-content .intro p {
     color: #444;
 }
+#dragon-part {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 80px 80px;
+}
+.dragons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .avatar {
     width: 100px;
     height: 100px;

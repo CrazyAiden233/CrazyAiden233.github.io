@@ -1,3 +1,21 @@
+function initLive2d (){
+    const button = document.getElementById("hide-button");
+    const live2d = document.getElementById("live2d");
+    const message = document.getElementById("message");
+    const anime = document.getElementById("anime");
+    if(live2d.style.display === "none") {
+        live2d.style.display = "block";
+        anime.style.zIndex = "11";
+        message.style.display = "block";
+        button.innerText = "隐藏";
+    } else {
+        live2d.style.display = "none";
+        message.style.display = "none";
+        anime.style.zIndex = "-999";
+        button.innerText = "显示";
+    }
+}
+initLive2d ();
 function renderTip(template, context) {
     var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
     return template.replace(tokenReg, function (word, slash1, token, slash2) {
@@ -123,22 +141,3 @@ function hideMessage(timeout){
     if (timeout === null) timeout = 5000;
     $('.message').delay(timeout).fadeTo(200, 0);
 }
-
-function initLive2d (){
-    const button = document.getElementById("hide-button");
-    const live2d = document.getElementById("live2d");
-    const message = document.getElementById("message");
-    const anime = document.getElementById("anime");
-    if(live2d.style.display === "none") {
-        live2d.style.display = "block";
-        anime.style.zIndex = "11";
-        message.style.display = "block";
-        button.innerText = "隐藏";
-    } else {
-        live2d.style.display = "none";
-        message.style.display = "none";
-        anime.style.zIndex = "-999";
-        button.innerText = "显示";
-    }
-}
-initLive2d ();

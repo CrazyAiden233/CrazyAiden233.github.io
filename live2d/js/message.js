@@ -128,14 +128,17 @@ function initLive2d (){
     const button = document.getElementById("hide-button");
     const live2d = document.getElementById("live2d");
     const message = document.getElementById("message");
+    const anime = document.getElementById("anime");
     if(live2d.style.display === "none") {
         live2d.style.display = "block";
+        anime.style.zIndex = "11";
         message.style.display = "block";
-        button.text = "隐藏"
+        button.innerText = "隐藏";
     } else {
         live2d.style.display = "none";
-        message.style.display = "none"
-        button.text = "显示";
+        message.style.display = "none";
+        anime.style.zIndex = "-999";
+        button.innerText = "显示";
     }
 }
 initLive2d ();

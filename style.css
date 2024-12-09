@@ -124,11 +124,14 @@ footer {
     color: #444;
 }
 #dragon-part {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-template-rows: 80px 80px;
+    display: flex;
+    margin: 20px 5%;
+    position: relative;
+    flex-direction: row;
+    gap: 30px;
 }
 .dragons {
+    scale: 120%;
     display: flex;
     justify-content: center;
     align-items: center;
